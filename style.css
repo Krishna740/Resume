@@ -59,6 +59,12 @@ html, body {
     background-color: black;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 #nav {
     display: flex;
     align-items: center;
@@ -66,10 +72,10 @@ html, body {
     width: 100%;
     padding: 20px 30px;
     color: #fff;
+    background-color: black; /* Ensure navbar background */
 }
 
 .nick {
-    margin-left: -40%;
     font-weight: 100;
 }
 
@@ -77,15 +83,17 @@ html, body {
     text-decoration: none;
     font-size: 18px;
     color: #fff;
+    margin: 0 15px; /* Space between navbar items */
 }
 
+/* Heading and Hero Section */
 #heading {
     margin-top: 10px;
 }
 
 #heading h1 {
     margin-left: 25px;
-    opacity: .6;
+    opacity: 0.6;
     line-height: 1;
     font-size: 10vw;
     text-transform: uppercase;
@@ -94,6 +102,12 @@ html, body {
 
 #heading #secondh1 {
     margin-left: 230px;
+}
+
+#extra h5{
+    margin-left: 930px;
+    margin-top: 120px;
+    font-size: 25px;
 }
 
 .blocktext {
@@ -161,7 +175,12 @@ html, body {
     background-color: black;
     width: 100%;
     height: 100vh;
+    padding-top: 10px;
     border-top: 1px solid #888;
+}
+
+.amazon_intro{
+    display: none;
 }
 
 .elem {
@@ -173,6 +192,7 @@ html, body {
     padding: 3.5vw 3vw;
     padding-right: 0;
     border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
 }
 
 .elem h1 {
@@ -242,6 +262,7 @@ html, body {
 
 #skills {
     color: #fff;
+    padding-top: 10px;
     text-decoration: none;
     margin-top: 25px;
     border-top: 1px solid #888;
@@ -274,6 +295,7 @@ html, body {
 
 #contact_me {
     color: #fff;
+    padding-top: 10px;
     text-decoration: none;
     margin-top: 25px;
     border-top: 1px solid #888;
@@ -390,29 +412,70 @@ a {
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        margin-top: 5px;
+        margin-left: 165px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 10px 0; /* Space between navbar items in column layout */
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
     #nav {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
+        align-items: flex-start;
     }
 
     .nick {
-        margin-left: 0;
+        display: flex;
+        margin: 10px 0; /* Space around nick for better separation */
+    }
+
+
+    #nav a {
+        margin: 5px 0; /* Space between navbar items in column layout */
+    }
+
+    #nav h2{
+        font-size: 35px;
+    }
+
+    #heading{
+        margin-top: 100px;
     }
 
     #heading h1 {
-        margin-left: 0;
+        margin-left: 20;
         font-size: 8vw;
     }
 
     #heading #secondh1 {
-        margin-left: 0;
+        margin-left: 130px;
+    }
+
+    #extra h5{
+        margin-left: 210px;
+        margin-top: 30px;
+        font-size: 10px;
     }
 
     #chhotiheadings {
         align-items: center;
         padding-right: 0;
+        margin-top: 20px;
     }
 
     #chhotiheadings h5 {
@@ -445,12 +508,23 @@ a {
     }
 
     #skills {
-        font-size: 5vw;
+        font-size: 4vw;
+        font-weight: lighter;
     }
 
     #skills_font {
         margin-left: 0;
         padding: 0 20px;
+    }
+
+    .amazon_intro{
+        display: contents;
+    }
+
+    .amazon_intro h6{
+        font-weight: lighter;
+        opacity: 0.5;
+        margin-left: 10px;
     }
 
     #contact_me {
@@ -466,12 +540,16 @@ a {
     }
 
     #footer {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        font-size: 10px;
     }
 
-    #footerleft, #footerright {
-        flex-direction: column;
-        gap: 10px;
+    #footerleft{
+        display: none;
+    }
+
+    #footerright a{
+        flex-direction: row;
+        font-size: 9px;
     }
 }
