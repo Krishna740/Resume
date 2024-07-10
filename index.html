@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna's Portfolio</title>
+    <link rel="stylesheet" href="loco.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="minicircle"></div>
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <div><h2>Portfolio</h2></div>
+                <div class="nick"><h3><a href="#">Krishna Swarup</a></h3></div>
+                <div id="view">
+                    <a href="#about">About Me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#second">Projects</a>
+                    <a href="#contact_me">Contact Me</a>
+                </div>
+            </div>
+            <div id="heading">
+                <div class="bounding">
+                    <h1 class="boundingelem">FULL STACK</h1>
+                </div>
+                <div class="blocktext">
+                    <div class="bounding">
+                        <h1 class="boundingelem" id="secondh1">DEVELOPER</h1>
+                    </div>                
+                </div>
+            </div>
+            <div class="extra">
+                <h5 class="boundingelem">IN MERN STACK</h5>
+            </div>
+            <div id="chhotiheadings">
+                <div class="bounding">
+                    <h5 class="boundingelem">available for freelance</h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingelem">work from Home</h5>
+                </div>
+            </div>
+            <div id="herofooter">
+                <a href="#">previously worked at Acmegrade <i class="ri-arrow-right-up-line"></i></a>
+                <a href="#">Pregrad Campus Ambassador <i class="ri-arrow-right-up-line"></i></a>
+                <div id="iconset">
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <img src="info.jpg" alt="">
+            <div id="textabout">
+                <h5 id="sec1">(ABout me)</h5>
+                <p>I'm a web developer with a passion for creating websites that not only look good but also solve
+                    real problems and I have started my developer journey with MERN Stack.I have also done advanced Microsoft Excel. When I'm not sketching ideas on paper, you can find me binge-watching a Netflix
+                    series or playing video games. My design philosophy is simple: make it visually appealing,
+                    functional, and bring a smile to people's faces. I'm the designer you want on your team if you want
+                    to make people say 'I need that in my life!'.</p>
+                <h5>(Education)</h5>
+                <p>I have done my Matriculation(10th) from BSEB board and scored 80% marks. I have also done ISC(12th) from BSEB board and got 87.4% marks in it.I am currently doing B.Tech (CSE) from I.K Gujral Punjab Technical University.I am currently a first year student.</p>
+                <a href="mailto:kswarup740@gmail.com">Let's talk</a>
+            </div>
+        </div>
+
+        <div id="skills">
+            <h1 class="skii" id="sec2">SKILLS</h1>
+            <div id="skills_font">
+                <ul>
+                    <li><h5>HTML</h5></li>
+                    <li><h5>CSS</h5></li>
+                    <li><h5>JAVASCRIPT</h5></li>
+                    <li><h5>SQL</h5></li>
+                    <li><h5>MONGO DB</h5></li>
+                    <li><h5>EXPRESS JS</h5></li>
+                    <li><h5>REACT JS</h5></li>
+                    <li><h5>NODE JS</h5></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="second">
+            <div>
+                <p class="pro" id="sec3">PROJECTS</p>
+            </div>
+            <div class="elem">
+                <img src="./plug.png" alt="">
+                <h1>Amazon Clone</h1>
+                <h5>2023</h5>
+            </div>
+            <div class="elem">
+                <img src="./ixperience.jpeg" alt="">
+                <h1>Spotify Clone</h1>
+                <h5>2023</h5>
+            </div>
+            <div class="elem elemlast">
+                <img src="./hudu.png" alt="">
+                <h1>Flipkart Clone</h1>
+                <h5>2023</h5>
+            </div>
+        </div>
+
+    <!-- Contact form -->
+    <div id="contact_me">
+        <p id="sec4">CONTACT ME</p>
+    </div>
+
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="#" method="POST" onsubmit="sendEmail(); reset(); return false;">
+ 
+                <label for="name"></label>
+                <input type="text" id="name" name="name" required placeholder="Enter Full Name">
+ 
+                <label for="email"></label>
+                <input type="email" id="email" name="email" required placeholder="Enter Email Address">
+ 
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
+ 
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="4" required placeholder="Enter Your Message"></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+        
+        <div id="footer">
+            <div id="footerleft">
+                <h5>2024 &copy;</h5>
+                <h5>IND</h5>
+            </div>
+            <div id="footerright">
+                <a href="mailto:kswarup740@gmail.com">Gmail</a><a href="https://twitter.com/KrishnaSwarup6" target="_blank">Twitter</a><a href="https://github.com/Krishna740" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/krishna-swarup-797b59199/" target="_blank">linkedIn</a><a href="https://www.instagram.com/_the.krishnaa_/" target="_blank">Instagram</a>
+            </div>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
