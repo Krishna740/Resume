@@ -5,6 +5,13 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
+// script.js
+function toggleMenu() {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('show');
+}
+
+
 function firstPageAnim() {
   var tl = gsap.timeline();
 
